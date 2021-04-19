@@ -1,0 +1,308 @@
+﻿* {
+    box-sizing: border-box;
+}
+.row:after{
+    content:"";
+    clear:both;
+    display:table;
+}
+body {
+    /*font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;*/
+    font-family: "Bitter";
+    font-size: 1.5em;
+    color: seagreen;
+    background: tan;
+}
+nav {
+	width:100%;
+	height:auto;
+    background-color:linen;
+    text-align:left;
+    clear:both;
+    float:left;  
+}
+nav a {
+    text-decoration:none;
+}
+nav p {
+    color: darkorange;
+    font-size: .7em;
+}
+nav ul li {
+	list-style:none;
+	margin-left:-35px;
+	border-bottom:gray 2px solid;
+	border-left:gray 2px solid;
+}
+nav ul li a:link, nav ul li a:visited {
+    display:block;
+    background-color:darkorange;
+    color:green;
+   	text-decoration:none;
+}
+nav ul li a:hover, nav ul li a:active{
+    display:block;
+    background-color:black;
+    color:white;
+}
+a:link, a:visited, a:hover,a:active{
+	color:mediumseagreen;
+	text-shadow:1px 1px black;
+}
+header {
+    width: 100%;
+    top: 0%;
+    color: seagreen;
+    padding: 10px;
+    height: auto;
+    background-color: linen;
+    box-shadow: 3px 3px #555;
+    opacity: 0.8;
+    text-align: center;
+    text-shadow: 1px 1px #555;
+    
+}
+h1 {
+    animation: slidein 3s;
+    animation-fill-mode: forwards;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: seagreen;
+    border-top: 3px solid green;
+    border-bottom: 3px solid green;
+    box-shadow: 2px 2px green;
+    background-color: white;
+}
+label {
+    text-align: right;
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+    color: seagreen;
+    font-size: 12pt;
+    vertical-align: text-top;
+}
+@keyframes slidein {
+    from {
+        margin-left: 200%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+section{
+	opacity:.8;
+	background:peachpuff;
+}
+fieldset {
+    padding: 1%;
+    flex: 1;
+    min-width: 400px;
+    background-color: white;
+    opacity: .9;
+    margin: 10px;
+    border: 4px groove darkgreen;
+    overflow: auto;
+}
+
+.inputButton {
+    font-size: 12pt;
+    width: 100px;
+    height: 30px;
+    font-size: 12pt;
+    background-color: darkgreen;
+    color: white;
+    font-weight: 900;
+    margin-top: 50px;
+    box-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+input {
+    text-align: left;
+    width: 160px;
+    font-size: 12pt;
+    color: black;
+}
+
+.shortinputButton {
+    width: 20px;
+    text-align: left;
+}
+summary{
+	color:#339966;
+	text-shadow:1px 1px #555;
+	font-size:.7em;
+}
+aside {
+    background: linen;
+    padding: 15px;
+    color: darkorange;
+    /*text-align: center;*/
+    font-size: .7em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+aside a{
+    box-shadow:0px 2px 2px green;
+}
+footer {
+    background-color: tan;
+    color: #ffffff;
+    text-align: right;
+    font-size: 16px;
+    padding: 15px;
+    opacity:.8;
+}
+img{
+	box-shadow: -2px -2px #555;
+}
+button {
+    background-color: linen;
+    color:indianred;
+}
+.icon-bar {
+    width: 95%;
+    margin-left: 30px;
+    color: darkorange;
+    text-shadow: 1px 1px #000000;
+    background-color: linen;
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 14%; /* Equal width (5 icons with 18% width each = 90%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: darkgoldenrod;
+    font-size: 36px; /* Increased font size */
+}
+.icon-bar a:hover {
+    background-color: peachpuff;
+    color: black;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overridden in tablet and desktop */
+    float: left; /* setting defaults for everything including tablet and desktop */
+    padding: 15px; /* setting defaults for everything including tablet and desktop */
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    body {
+        max-width: 1200px;
+        background: url('../media/sunsetback.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-color: #111;
+    }
+}
